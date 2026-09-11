@@ -22,7 +22,7 @@
  *
  * Tempo:  O(n)
  * Espaço: O(n)
- Solução: Runtime 1ms
+ * Solução: Runtime 1ms
  */
 
 var twoSum = function (nums, target) {

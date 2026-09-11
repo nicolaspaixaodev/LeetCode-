@@ -1,5 +1,5 @@
 /**
- * 1. Two Sum  ·  Fácil
+ * 1. Two Sum  ·  Problema classificado como: Fácil
  * https://leetcode.com/problems/two-sum/
  *
  * PROBLEMA
@@ -7,14 +7,14 @@
  * elementos que somam o alvo. Cada entrada tem exatamente uma
  * solução, e não se pode usar o mesmo elemento duas vezes.
  *
- * IDEIA
+ * IDEIA:
  * A força bruta testa todos os pares — dois laços aninhados, O(n²).
  * A virada é trocar BUSCA por CONSULTA: em vez de perguntar
  * "quem combina com esse número?", pergunto "eu já vi o número que
- * falta pra completar esse?".
+ * falta pra completar esse?"; Otimizando assim o processo.
  *
  * Um objeto guarda cada número já visto e sua posição. Aí a resposta
- * sai numa consulta direta, e uma passada resolve.
+ * sai numa consulta direta, e uma passada simples resolve.
  *
  * DETALHE QUE IMPORTA
  * A consulta vem ANTES de anotar. Se fosse o contrário, em [3, 3]
@@ -22,6 +22,7 @@
  *
  * Tempo:  O(n)
  * Espaço: O(n)
+ Solução: Runtime 1ms
  */
 
 var twoSum = function (nums, target) {
